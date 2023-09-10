@@ -3,6 +3,7 @@
  import Logos from '../../assets/images/logo.png'
  import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
  import { faIdCard, faPaw, faUserNinja } from '@fortawesome/free-solid-svg-icons'
+import { faLinkedin, faInstagram, faGithub, } from '@fortawesome/free-brands-svg-icons';
 
 
 const Sidebar = () => (
@@ -21,6 +22,23 @@ const Sidebar = () => (
                 <FontAwesomeIcon icon={faIdCard} />
             </NavLink>
         </nav>
+        <ul>
+            <li>
+                <a target="_blank" rel="noreferrer" href = "">
+                    <FontAwesomeIcon icon={faLinkedin} />
+                </a>
+            </li>
+            <li>
+                <a target="_blank" rel="noreferrer" href = "">
+                    <FontAwesomeIcon icon={faGithub} />
+                </a>
+            </li>
+            <li>
+                <a target="_blank" rel="noreferrer" href = "">
+                    <FontAwesomeIcon icon={faInstagram} />
+                </a>
+            </li>
+        </ul>
     </div>
 )
 
