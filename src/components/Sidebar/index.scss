@@ -53,6 +53,7 @@
         }
             &:after{
                 content: '';
+                font-family: Imported;
                 font-size: 9px;
                 letter-spacing: 2px;
                 position: absolute;
@@ -69,6 +70,11 @@
                         }
                     }
 
+        }
+        a.projects-link{
+            &:after{
+                content: 'Projects';
+            }
         }
         a.about-link{
             &:after{

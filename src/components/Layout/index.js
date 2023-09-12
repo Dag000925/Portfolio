@@ -2,6 +2,7 @@ import { Outlet } from 'react-router-dom';
 import Sidebar from '../Sidebar'
 import './index.scss'
 
+
 const Layout = () => {
     return(
     <div classname = "App">
@@ -11,7 +12,7 @@ const Layout = () => {
             </span>
             <Outlet/>
 
-            <span className = 'tags bottom-tags'>Public static void main{'(String[] args){'}
+                <span className = 'tags bottom-tags'>Public static void main{'(String[] args){'}
             <br />
             <span className='middle-tag-html'>System.out.print{'('}</span>
             </span>

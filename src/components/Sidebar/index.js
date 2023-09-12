@@ -2,8 +2,8 @@
  import { Link, NavLink } from 'react-router-dom'
  import Logos from '../../assets/images/logo.png'
  import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
- import { faIdCard, faPaw, faUserNinja } from '@fortawesome/free-solid-svg-icons'
-import { faLinkedin, faInstagram, faGithub, } from '@fortawesome/free-brands-svg-icons';
+ import { faBriefcase, faIdCard, faPaw, faUserNinja } from '@fortawesome/free-solid-svg-icons'
+import { faLinkedin, faInstagram, faGithub, faFacebook } from '@fortawesome/free-brands-svg-icons';
 
 
 const Sidebar = () => (
@@ -14,6 +14,9 @@ const Sidebar = () => (
         <nav>
             <NavLink exact="true" activeclassname="active" to="/">
                 <FontAwesomeIcon icon={faPaw} />
+            </NavLink>
+            <NavLink exact="true" activeclassname="active" className="projects-link"to="/projects">
+                <FontAwesomeIcon icon={faBriefcase} />
             </NavLink>
             <NavLink exact="true" activeclassname="active" className="about-link"to="/about">
                 <FontAwesomeIcon icon={faUserNinja} />
@@ -36,6 +39,11 @@ const Sidebar = () => (
             <li>
                 <a target="_blank" rel="noreferrer" href = "">
                     <FontAwesomeIcon icon={faInstagram} />
+                </a>
+            </li>
+            <li>
+                <a target="_blank" rel="noreferrer" href = "https://www.facebook.com/7144324.D/">
+                    <FontAwesomeIcon icon={faFacebook} />
                 </a>
             </li>
         </ul>
