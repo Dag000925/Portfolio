@@ -1,6 +1,8 @@
 .contact-form{
-    width: 100%;
-    margin-top: 20px;
+    width: 40%;
+    margin-top: 300px;
+    margin-left: 200px;
+    //position: relative;
     ul{
         padding: 0;
         margin: 0;
@@ -15,7 +17,7 @@
             position: relative;
             opacity: 0;;
             background-color: transparent;
-            animation: fadeInUp 3s 3s;
+            animation: fadeInUp 2s 2s;
             animation-fill-mode: forwards;
             clear: both;
         }
@@ -33,6 +35,8 @@
     }
     input[type="text"],
     input[type="email"]{
+
+        font-family: Imported;
         
         width: 100%;
         border: 0;
@@ -44,7 +48,7 @@
     }
 
     textarea{
-        
+        font-family: Imported;
         width: 100%;
         border: 0;
         background: #483248;
@@ -53,8 +57,9 @@
         padding: 20px;
         min-height: 150px;
         box-sizing: border-box;
+    
     }
-    .flat-button{
+    input[type="submit"]{
         color: black;
         background: 0 0;
         font-size: 20px;
@@ -62,6 +67,7 @@
         text-decoration: none;
         padding: 8px 10px;
         float: right;
+        font-family: Imported;
 
     }
 }

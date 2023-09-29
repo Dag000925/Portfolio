@@ -3,7 +3,7 @@
  import Logos from '../../assets/images/logo.png'
  import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
  import { faBriefcase, faIdCard, faPaw, faUserNinja } from '@fortawesome/free-solid-svg-icons'
-import { faLinkedin, faInstagram, faGithub, faFacebook } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedin, faFacebook } from '@fortawesome/free-brands-svg-icons';
 
 
 const Sidebar = () => (
@@ -27,18 +27,8 @@ const Sidebar = () => (
         </nav>
         <ul>
             <li>
-                <a target="_blank" rel="noreferrer" href = "">
+                <a target="_blank" rel="noreferrer" href = "https://www.linkedin.com/in/dagvadorj-mendsaikhan-97359a211/">
                     <FontAwesomeIcon icon={faLinkedin} />
-                </a>
-            </li>
-            <li>
-                <a target="_blank" rel="noreferrer" href = "">
-                    <FontAwesomeIcon icon={faGithub} />
-                </a>
-            </li>
-            <li>
-                <a target="_blank" rel="noreferrer" href = "">
-                    <FontAwesomeIcon icon={faInstagram} />
                 </a>
             </li>
             <li>

@@ -1,73 +1,41 @@
 import './index.scss'
-import Typewriter from 'typewriter-effect'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 
 
 const Contact = () => {
-    const refForm = useRef()
+    const form = useRef();
 
-    const sendEmail = (e) =>{
-        e.preventDefault()
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-        emailjs
-            .sendForm(
-                'default_service',
-                'template_ub3lxst',
-                refForm.current,
-                'DU02ew3udKnn5Jj77DzQp'
-
-            )
-            .then(
-                () => {
-                    alert('Message successfully sent!')
-                },
-                () => {
-                    alert('Failed to send the message, try again')
-                }
-            )
-    }
+    emailjs.sendForm('service_20jnwfi', 'template_1h61t8u', form.current, 'fXW49S5_MvzFDU8l5')
+      .then((result) => {
+          console.log(result.text);
+          console.log("Message Sent Successfully")
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
     return (
-        <div className = "container contact-page">
-            <div className="text-zone">
-                <h1>
-                    <Typewriter    
-                        options={{
-                            autoStart: true,
-                            loop: true,
-                            delay: 160,
-                            strings: ["Contact Me"]
-                            
-                        }}
-                    />
-                </h1>
-                {/* <p>
-                    Contact to say Hi and more
-                </p> */}
-                <div className="contact-form">
-                    <form ref={refForm} onSubmit={sendEmail}>
-                        <ul>
-                            <li>
-                                <input type="text" name="name" placeHolder="Your Name" required/>
-                            </li>
-                            <li>
-                                <input type="text" name="email" placeHolder="Your Email" required/>
-                            </li>
-                            <li>
-                                <input type="text" name="subject" placeHolder="Subject" required/>
-                            </li>
-                            <li>
-                                <textarea placeHolder="Message" name="message" required/>
-                            </li>
-                            <li>
-                                <input type="submit" className='flat-button' value="Send"/>
-                            </li>
-                        </ul>
-                    </form>
-                </div>
-
-            </div>
-
+        <div className="contact-form">
+                <form ref={form} onSubmit={sendEmail}>
+                    <ul>
+                        <li>
+                            <input type="text" name="from_name" placeholder="Your Name" required/>
+                        </li>
+                        <li>
+                            <input type="email" name="to_name" placeholder="Your Email" required/>
+                        </li>
+                        <li>
+                            <textarea placeholder="Message" name ="message" required />
+                        </li>
+                        <li>
+                            <input type="submit" value="Send"/>
+                        </li>
+                    </ul>
+                </form>
+            
         </div>
     )
 }

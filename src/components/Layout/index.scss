@@ -12,48 +12,12 @@
 .tags {
   color: black;
   opacity: 0.8;
-  position: absolute;
+  position: relative;
   bottom: 0;
   left: 120px;
   font-size: 18px;
   font-family:Imported; 
 }
-  
-.middle-tag-html {
-    
-  position: absolute;
-  top: 40px;
-  left: 35px;
-  padding: 5px;
-}
-  
-.bottom-tags {
-    /* Styles for tags at the bottom */
-  position: absolute;
-  top: 72px;
-  right: 60px; 
-  padding: 5px;
-
-}
-
-.very-bottom-tags{
-  position: absolute;
-  bottom: 68px;
-  left: 205px;
-}
-.very2-bottom-tags{
-  position: absolute;
-  bottom: 40px;
-  left: 165px;
-}
-.very3-bottom-tags {
-  /* Styles for very bottom tags */
-  position: absolute;
-  bottom: 10px; 
-  right: 10px; 
-  padding: 5px;
-}
-
 
 .container{
   width: 100%;
@@ -70,8 +34,8 @@
   animation-delay: 1s;
      
 }
-.about-page,
-.contact-page{
+.about-page
+{
   .text-zone{
     position: absolute;
     left: 13%;
@@ -88,7 +52,7 @@
       color: black;
       font-weight: 200;
       margin-top: 0;
-      position: relative;
+      
       
 
     }
@@ -121,22 +85,28 @@
     font-size: 15px;
     font-family: Imported;
     position: absolute;
-    left: 13%;
-    top: 60%;
+    left: 10%;
+    top: 50%;
+    margin: auto;
     transform: translateY(-50%);
     width: 35%;
-    vertical-align: middle;
+    
+
+    
     display: table-cell;
     max-height: 90%;
-
+  }}
     p{
       font-style: 55px;
       color: white;
       font-family: 'Courier New', Courier, monospace;
       font-weight: bold;
-      // min-width: fit-content;
+      min-width: fit-content;
       animation: pulse 1s;
       font-size: 14px;
+      position: relative;
+      
+      
 
       &:nth-of-type(1){
         animation-delay: 1.3s;
@@ -144,16 +114,6 @@
       &:nth-of-type(2){
         animation-delay: 1.5s;
       }
-      &:nth-of-type(3){
-        animation-delay: 1.7s;
-      }
-      &:nth-of-type(4){
-        animation-delay: 1.9s;
-      }
     }
-  }
-}
 
 
-
-  
